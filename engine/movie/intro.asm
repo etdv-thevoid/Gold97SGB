@@ -512,6 +512,7 @@ IntroScene3:
 	call Functione4e67
 	ret nc
 ; next scene if carry flag is set
+	call Intro_InitAerodactyl
 	call Intro_ResetLYOverrides
 	ld hl, hSCY
 	inc [hl]
@@ -526,9 +527,10 @@ IntroScene4:
 	ld hl, wIntroFrameCounter2
 	inc [hl]
 	ld a, [hl]
-	and $7
+	and $f
 	jr nz, .asm_e4e21
 	ld hl, hSCX
+	dec [hl]
 	dec [hl]
 
 .asm_e4e21
@@ -749,18 +751,18 @@ Intro_InitShellders:
 	call InitSpriteAnimStruct
 	ret
 
+Intro_InitAerodactyl:
+	depixel 6, 0
+	ld a, SPRITE_ANIM_INDEX_GS_INTRO_AERODACTYL
+	call InitSpriteAnimStruct
+	ret
+
 Intro_InitLapras:
 	ld a, [wIntroFrameCounter2]
 	and %00011111
 	ret nz
 	depixel 16, 24
 	ld a, SPRITE_ANIM_INDEX_GS_INTRO_LAPRAS
-	call InitSpriteAnimStruct
-	ret
-
-Intro_UnusedInitLapras:
-	depixel 2, 0
-	ld a, SPRITE_ANIM_INDEX_UNUSED_LAPRAS
 	call InitSpriteAnimStruct
 	ret
 
@@ -1120,15 +1122,15 @@ IntroScene10:
 	ld bc, vTiles1 - vTiles0
 	call Decompress
 
-	ld c, CHIKORITA
-	ld de, vTiles0 tile $10
-	farcall Intro_GetMonFrontpic
-	ld c, CUBBURN
-	ld de, vTiles0 tile $29
-	farcall Intro_GetMonFrontpic
-	ld c, PALSSIO
-	ld de, vTiles0 tile $42
-	farcall Intro_GetMonFrontpic
+	; ld c, CHIKORITA
+	; ld de, vTiles0 tile $10
+	; farcall Intro_GetMonFrontpic
+	; ld c, CUBBURN
+	; ld de, vTiles0 tile $29
+	; farcall Intro_GetMonFrontpic
+	; ld c, PALSSIO
+	; ld de, vTiles0 tile $42
+	; farcall Intro_GetMonFrontpic
 
 	ld hl, wSpriteAnimDict
 	ld a, 1
@@ -1340,14 +1342,14 @@ Intro_CheckSCYEvent:
 	dbw $88, Functione53e0
 	dbw $98, Functione53eb
 	dbw $99, Intro_LoadCubburnPalette
-	dbw $af, Intro_CubburnAppears
-	dbw $b0, Functione53e0
-	dbw $c0, Functione53eb
-	dbw $c1, Intro_LoadPalssioPalette
-	dbw $d7, Intro_PalssioAppears
-	dbw $d8, Functione53e0
-	dbw $e8, Functione53eb
-	dbw $e9, Functione5412
+	dbw $cf, Intro_CubburnAppears
+	dbw $d0, Functione53e0
+	dbw $e0, Functione53eb
+	; dbw $c1, Intro_LoadPalssioPalette
+	; dbw $d7, Intro_PalssioAppears
+	; dbw $d8, Functione53e0
+	; dbw $e8, Functione53eb
+	dbw $e1, Functione5412
 	db -1
 
 Intro_ChikoritaAppears:
@@ -1389,12 +1391,12 @@ Functione53eb:
 	ret
 
 Intro_LoadChikoritaPalette:
-	ld c, CHIKORITA
+	ld c, BLASTOISE
 	farcall Intro_LoadMonPalette
 	ret
 
 Intro_LoadCubburnPalette:
-	ld c, CUBBURN
+	ld c, VENUSAUR
 	farcall Intro_LoadMonPalette
 	ret
 
