@@ -279,9 +279,9 @@ RuinsOfAlphOutside_MapEvents:
 	db 0, 0 ; filler
 
 	db 7 ; warp events
-	warp_event 15,  9, RUINS_OF_ALPH_HO_OH_CHAMBER, 1
+	warp_event 15,  9, RUINS_OF_ALPH_OMANYTE_CHAMBER, 1
 	warp_event  5, 27, RUINS_OF_ALPH_KABUTO_CHAMBER, 1
-	warp_event  5,  5, RUINS_OF_ALPH_OMANYTE_CHAMBER, 1
+	warp_event  5,  5, RUINS_OF_ALPH_HO_OH_CHAMBER, 1
 	warp_event  3, 17, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 1
 	warp_event  9, 19, RUINS_OF_ALPH_INNER_CHAMBER, 1
 	warp_event  5, 22, RUINS_OF_ALPH_RESEARCH_CENTER, 1
