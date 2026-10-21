@@ -9,7 +9,8 @@ SpriteAnimOAMData:
 	dbw $6e, .OAMData_GSIntroShellder          ; SPRITE_ANIM_OAMSET_GS_INTRO_SHELLDER_2
 	dbw $2d, .OAMData_GSIntroMagikarp          ; SPRITE_ANIM_OAMSET_GS_INTRO_MAGIKARP_1
 	dbw $4d, .OAMData_GSIntroMagikarp          ; SPRITE_ANIM_OAMSET_GS_INTRO_MAGIKARP_2
- 	dbw $60, .OAMData_UnusedLapras             ; SPRITE_ANIM_OAMSET_GS_INTRO_UNUSED_LAPRAS
+ 	dbw $60, .OAMData_GSIntroAerodactyl        ; SPRITE_ANIM_OAMSET_GS_INTRO_AERODACTYL_1
+ 	dbw $70, .OAMData_GSIntroAerodactyl        ; SPRITE_ANIM_OAMSET_GS_INTRO_AERODACTYL_2
  	dbw $00, .OAMData_GSIntroLapras1           ; SPRITE_ANIM_OAMSET_GS_INTRO_LAPRAS_1
  	dbw $00, .OAMData_GSIntroLapras2           ; SPRITE_ANIM_OAMSET_GS_INTRO_LAPRAS_2
 	dbw $06, .OAMData_GSIntroLapras3           ; SPRITE_ANIM_OAMSET_GS_INTRO_LAPRAS_3
@@ -29,8 +30,8 @@ SpriteAnimOAMData:
 	dbw $01, .OAMData_TradePoofBubble          ; SPRITE_ANIM_OAMSET_GS_INTRO_MED_FIREBALL
 	dbw $09, .OAMData_GSIntroBigFireball       ; SPRITE_ANIM_OAMSET_GS_INTRO_BIG_FIREBALL
 	dbw $10, .OAMData_GSIntroStarter           ; SPRITE_ANIM_OAMSET_GS_INTRO_CHIKORITA
-	dbw $29, .OAMData_GSIntroStarter           ; SPRITE_ANIM_OAMSET_GS_INTRO_CUBBURN
-	dbw $42, .OAMData_GSIntroStarter           ; SPRITE_ANIM_OAMSET_GS_INTRO_PALSSIO
+	dbw $40, .OAMData_GSIntroStarter           ; SPRITE_ANIM_OAMSET_GS_INTRO_CUBBURN
+	dbw $10, .OAMData_GSIntroStarter           ; SPRITE_ANIM_OAMSET_GS_INTRO_PALSSIO
 	dbw $78, .OAMData_GSTitleTrail             ; SPRITE_ANIM_OAMSET_GS_TITLE_TRAIL_1
 	dbw $7c, .OAMData_GSTitleTrail             ; SPRITE_ANIM_OAMSET_GS_TITLE_TRAIL_2
 	dbw $00, .OAMData_TextEntryCursor          ; SPRITE_ANIM_OAMSET_TEXT_ENTRY_CURSOR
@@ -237,7 +238,7 @@ ENDC
 	dbsprite  0,  1,  0,  0, $32, 0
 	dbsprite  1,  1,  0,  0, $33, 0
 
-.OAMData_GSIntroStarter:
+;.OAMData_GSIntroStarter:
 	db 25
 	dbsprite -3, -3,  4,  4, $00, 0
 	dbsprite -3, -2,  4,  4, $01, 0
@@ -265,7 +266,7 @@ ENDC
 	dbsprite  1,  0,  4,  4, $17, 0
 	dbsprite  1,  1,  4,  4, $18, 0
 
-; unused
+.OAMData_GSIntroStarter
 	db 36
 	dbsprite -3, -3,  0,  0, $00, 0
 	dbsprite -2, -3,  0,  0, $01, 0
@@ -355,7 +356,7 @@ ENDC
 	dbsprite -1,  0,  4,  0, $11, 1
 	dbsprite  0,  0,  4,  0, $12, 1
 
-.OAMData_UnusedLapras:
+.OAMData_GSIntroAerodactyl:
 	db 10
 	dbsprite -2, -2,  0,  4, $00, 0
 	dbsprite -1, -2,  0,  4, $01, 0

@@ -1326,6 +1326,7 @@ OnixEvosAttacks:
 	db 27, RAGE
 	db 36, SANDSTORM
 	db 40, SLAM
+	db 49, ROCK_HEAD
 	db 0 ; no more level-up moves
 
 DrowzeeEvosAttacks:
@@ -1561,7 +1562,8 @@ RhyhornEvosAttacks:
 	db 24, ROCK_SLIDE
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
-	db 49, TAKE_DOWN
+	db 42, TAKE_DOWN
+	db 49, ROCK_HEAD
 	db 55, EARTHQUAKE
 	db 0 ; no more level-up moves
 
@@ -1576,7 +1578,8 @@ RhydonEvosAttacks:
 	db 24, ROCK_SLIDE
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
-	db 54, TAKE_DOWN
+	db 42, TAKE_DOWN
+	db 54, ROCK_HEAD
 	db 65, EARTHQUAKE
 	db 0 ; no more level-up moves
 
@@ -1734,6 +1737,7 @@ ScytherEvosAttacks:
 	db 34, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
+	db 54, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 JynxEvosAttacks:
@@ -2984,6 +2988,7 @@ ScizorEvosAttacks:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 50, DOUBLE_TEAM
+	db 58, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 

@@ -170,8 +170,8 @@ MonMenuIcons:
 	db ICON_BUG         ; SPINARAK
 	db ICON_BUG         ; ARIADOS
 	db ICON_BAT         ; CROBAT
-	db ICON_MONSTER     ; TYKER
-	db ICON_MONSTER     ; STRAIGAR
+	db ICON_FOX         ; TYKER
+	db ICON_FOX         ; STRAIGAR
 	db ICON_PIKACHU     ; PICHU
 	db ICON_CLEFAIRY    ; CLEFFA
 	db ICON_JIGGLYPUFF  ; IGGLYBUFF
@@ -180,7 +180,7 @@ MonMenuIcons:
 	db ICON_BIRD        ; NATU
 	db ICON_BIRD        ; XATU
 	db ICON_FOX         ; MAREEP
-	db ICON_MONSTER     ; FLAAFFY
+	db ICON_FOX         ; FLAAFFY
 	db ICON_MONSTER     ; AMPHAROS
 	db ICON_ODDISH      ; BELLOSSOM
 	db ICON_JIGGLYPUFF  ; MARILL
@@ -190,12 +190,12 @@ MonMenuIcons:
 	db ICON_ODDISH      ; HOPPIP
 	db ICON_ODDISH      ; SKIPLOOM
 	db ICON_ODDISH      ; JUMPLUFF
-	db ICON_MONSTER     ; AIPOM
+	db ICON_FOX         ; AIPOM
 	db ICON_FISH        ; ORFRY
 	db ICON_ODDISH      ; SUNFLORA
 	db ICON_FISH        ; MOLAMBINO
 	db ICON_FISH        ; ANGORE
-	db ICON_MONSTER     ; LURREEL
+	db ICON_FISH        ; LURREEL
 	db ICON_FOX         ; ESPEON
 	db ICON_FOX         ; UMBREON
 	db ICON_BIRD        ; MURKROW
@@ -209,8 +209,8 @@ MonMenuIcons:
 	db ICON_BUG         ; PARA
 	db ICON_BLOB        ; MIMMEO
 	db ICON_SERPENT     ; STEELIX
-	db ICON_MONSTER     ; SNUBBULL
-	db ICON_FISH        ; QUAGSIRE
+	db ICON_CLEFAIRY    ; SNUBBULL
+	db ICON_MONSTER     ; QUAGSIRE
 	db ICON_BUG         ; TRICULES
 	db ICON_BUG         ; SCIZOR
 	db ICON_FOX         ; MOIBELLE
@@ -225,30 +225,30 @@ MonMenuIcons:
 	db ICON_FOX         ; PUPPERON
 	db ICON_FISH        ; REMORAID
 	db ICON_FISH        ; OCTILLERY
-	db ICON_MONSTER     ; DELIBIRD
+	db ICON_CLEFAIRY    ; DELIBIRD
 	db ICON_FISH        ; MANTINE
 	db ICON_BIRD        ; SKARMORY
 	db ICON_FOX         ; HOUNDOUR
 	db ICON_FOX         ; HOUNDOOM
-	db ICON_BIGMON      ; KINGDRA
+	db ICON_GYARADOS    ; KINGDRA
 	db ICON_EQUINE      ; PHANPY
 	db ICON_EQUINE      ; DONPHAN
 	db ICON_VOLTORB     ; PORYGON2
 	db ICON_HUMANSHAPE  ; MIMEJR
-	db ICON_MONSTER     ; SMEARGLE
+	db ICON_HUMANSHAPE  ; SMEARGLE
 	db ICON_FIGHTER     ; TYROGUE
 	db ICON_FIGHTER     ; HITMONTOP
 	db ICON_HUMANSHAPE  ; SMOOCHUM
 	db ICON_HUMANSHAPE  ; ELEKID
 	db ICON_HUMANSHAPE  ; MAGBY
-	db ICON_BIRD        ; DODAERIE actually dodaerie
-	db ICON_EQUINE      ; MILTANK actually dodaerie
+	db ICON_BIRD        ; DODAERIE
+	db ICON_EQUINE      ; MILTANK
 	db ICON_FOX         ; RAIKOU
 	db ICON_FOX         ; ENTEI
 	db ICON_FOX         ; SUICUNE
 	db ICON_MONSTER     ; WARFURS
 	db ICON_MONSTER     ; WARFARU
 	db ICON_MONSTER     ; LICKILORD
-	db ICON_CLEFAIRY    ; BLISSEY actually miltank
+	db ICON_CLEFAIRY    ; BLISSEY
 	db ICON_HO_OH       ; HO_OH
 	db ICON_FOX		    ; LEAFEON

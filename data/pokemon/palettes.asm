@@ -1,540 +1,1026 @@
 PokemonPalettes:
-; entries correspond to Pokémon species, two apiece
-
-; Each back.gbcpal is generated from the corresponding .png, and
-; only the middle two colors are included, not black or white.
-; Shiny palettes are defined directly, not generated.
+; entries correspond to Pokémon species, two apiece (default / shiny)
 
 ; 000
-	RGB 30, 22, 17
-	RGB 16, 14, 19
-; 000 shiny
-	RGB 30, 22, 17
-	RGB 16, 14, 19
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
 
-INCBIN "gfx/pokemon/bulbasaur/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bulbasaur/shiny.pal"
-INCBIN "gfx/pokemon/ivysaur/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ivysaur/shiny.pal"
-INCBIN "gfx/pokemon/venusaur/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/venusaur/shiny.pal"
-INCBIN "gfx/pokemon/charmander/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/charmander/shiny.pal"
-INCBIN "gfx/pokemon/charmeleon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/charmeleon/shiny.pal"
-INCBIN "gfx/pokemon/charizard/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/charizard/shiny.pal"
-INCBIN "gfx/pokemon/squirtle/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/squirtle/shiny.pal"
-INCBIN "gfx/pokemon/wartortle/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/wartortle/shiny.pal"
-INCBIN "gfx/pokemon/blastoise/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/blastoise/shiny.pal"
-INCBIN "gfx/pokemon/caterpie/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/caterpie/shiny.pal"
-INCBIN "gfx/pokemon/metapod/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/metapod/shiny.pal"
-INCBIN "gfx/pokemon/butterfree/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/butterfree/shiny.pal"
-INCBIN "gfx/pokemon/weedle/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/weedle/shiny.pal"
-INCBIN "gfx/pokemon/kakuna/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kakuna/shiny.pal"
-INCBIN "gfx/pokemon/beedrill/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/beedrill/shiny.pal"
-INCBIN "gfx/pokemon/pidgey/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pidgey/shiny.pal"
-INCBIN "gfx/pokemon/pidgeotto/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pidgeotto/shiny.pal"
-INCBIN "gfx/pokemon/pidgeot/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pidgeot/shiny.pal"
-INCBIN "gfx/pokemon/rattata/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/rattata/shiny.pal"
-INCBIN "gfx/pokemon/raticate/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/raticate/shiny.pal"
-INCBIN "gfx/pokemon/spearow/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/spearow/shiny.pal"
-INCBIN "gfx/pokemon/fearow/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/fearow/shiny.pal"
-INCBIN "gfx/pokemon/ekans/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ekans/shiny.pal"
-INCBIN "gfx/pokemon/arbok/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/arbok/shiny.pal"
-INCBIN "gfx/pokemon/pikachu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pikachu/shiny.pal"
-INCBIN "gfx/pokemon/raichu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/raichu/shiny.pal"
-INCBIN "gfx/pokemon/sandshrew/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/sandshrew/shiny.pal"
-INCBIN "gfx/pokemon/sandslash/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/sandslash/shiny.pal"
-INCBIN "gfx/pokemon/nidoran_f/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidoran_f/shiny.pal"
-INCBIN "gfx/pokemon/nidorina/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidorina/shiny.pal"
-INCBIN "gfx/pokemon/nidoqueen/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidoqueen/shiny.pal"
-INCBIN "gfx/pokemon/nidoran_m/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidoran_m/shiny.pal"
-INCBIN "gfx/pokemon/nidorino/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidorino/shiny.pal"
-INCBIN "gfx/pokemon/nidoking/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/nidoking/shiny.pal"
-INCBIN "gfx/pokemon/clefairy/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/clefairy/shiny.pal"
-INCBIN "gfx/pokemon/clefable/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/clefable/shiny.pal"
-INCBIN "gfx/pokemon/vulpix/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/vulpix/shiny.pal"
-INCBIN "gfx/pokemon/ninetales/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ninetales/shiny.pal"
-INCBIN "gfx/pokemon/jigglypuff/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/jigglypuff/shiny.pal"
-INCBIN "gfx/pokemon/wigglytuff/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/wigglytuff/shiny.pal"
-INCBIN "gfx/pokemon/zubat/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/zubat/shiny.pal"
-INCBIN "gfx/pokemon/golbat/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/golbat/shiny.pal"
-INCBIN "gfx/pokemon/oddish/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/oddish/shiny.pal"
-INCBIN "gfx/pokemon/gloom/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/gloom/shiny.pal"
-INCBIN "gfx/pokemon/vileplume/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/vileplume/shiny.pal"
-INCBIN "gfx/pokemon/paras/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/paras/shiny.pal"
-INCBIN "gfx/pokemon/parasect/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/parasect/shiny.pal"
-INCBIN "gfx/pokemon/venonat/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/venonat/shiny.pal"
-INCBIN "gfx/pokemon/venomoth/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/venomoth/shiny.pal"
-INCBIN "gfx/pokemon/diglett/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/diglett/shiny.pal"
-INCBIN "gfx/pokemon/dugtrio/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dugtrio/shiny.pal"
-INCBIN "gfx/pokemon/meowth/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/meowth/shiny.pal"
-INCBIN "gfx/pokemon/persian/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/persian/shiny.pal"
-INCBIN "gfx/pokemon/psyduck/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/psyduck/shiny.pal"
-INCBIN "gfx/pokemon/golduck/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/golduck/shiny.pal"
-INCBIN "gfx/pokemon/mankey/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mankey/shiny.pal"
-INCBIN "gfx/pokemon/primeape/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/primeape/shiny.pal"
-INCBIN "gfx/pokemon/growlithe/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/growlithe/shiny.pal"
-INCBIN "gfx/pokemon/arcanine/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/arcanine/shiny.pal"
-INCBIN "gfx/pokemon/poliwag/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/poliwag/shiny.pal"
-INCBIN "gfx/pokemon/poliwhirl/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/poliwhirl/shiny.pal"
-INCBIN "gfx/pokemon/poliwrath/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/poliwrath/shiny.pal"
-INCBIN "gfx/pokemon/abra/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/abra/shiny.pal"
-INCBIN "gfx/pokemon/kadabra/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kadabra/shiny.pal"
-INCBIN "gfx/pokemon/alakazam/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/alakazam/shiny.pal"
-INCBIN "gfx/pokemon/machop/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/machop/shiny.pal"
-INCBIN "gfx/pokemon/machoke/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/machoke/shiny.pal"
-INCBIN "gfx/pokemon/machamp/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/machamp/shiny.pal"
-INCBIN "gfx/pokemon/bellsprout/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bellsprout/shiny.pal"
-INCBIN "gfx/pokemon/weepinbell/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/weepinbell/shiny.pal"
-INCBIN "gfx/pokemon/victreebel/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/victreebel/shiny.pal"
-INCBIN "gfx/pokemon/tentacool/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tentacool/shiny.pal"
-INCBIN "gfx/pokemon/tentacruel/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tentacruel/shiny.pal"
-INCBIN "gfx/pokemon/geodude/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/geodude/shiny.pal"
-INCBIN "gfx/pokemon/graveler/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/graveler/shiny.pal"
-INCBIN "gfx/pokemon/golem/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/golem/shiny.pal"
-INCBIN "gfx/pokemon/ponyta/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ponyta/shiny.pal"
-INCBIN "gfx/pokemon/rapidash/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/rapidash/shiny.pal"
-INCBIN "gfx/pokemon/slowpoke/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/slowpoke/shiny.pal"
-INCBIN "gfx/pokemon/slowbro/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/slowbro/shiny.pal"
-INCBIN "gfx/pokemon/magnemite/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/magnemite/shiny.pal"
-INCBIN "gfx/pokemon/magneton/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/magneton/shiny.pal"
-INCBIN "gfx/pokemon/farfetch_d/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/farfetch_d/shiny.pal"
-INCBIN "gfx/pokemon/doduo/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/doduo/shiny.pal"
-INCBIN "gfx/pokemon/dodrio/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dodrio/shiny.pal"
-INCBIN "gfx/pokemon/seel/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/seel/shiny.pal"
-INCBIN "gfx/pokemon/dewgong/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dewgong/shiny.pal"
-INCBIN "gfx/pokemon/grimer/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/grimer/shiny.pal"
-INCBIN "gfx/pokemon/muk/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/muk/shiny.pal"
-INCBIN "gfx/pokemon/shellder/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/shellder/shiny.pal"
-INCBIN "gfx/pokemon/cloyster/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/cloyster/shiny.pal"
-INCBIN "gfx/pokemon/gastly/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/gastly/shiny.pal"
-INCBIN "gfx/pokemon/haunter/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/haunter/shiny.pal"
-INCBIN "gfx/pokemon/gengar/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/gengar/shiny.pal"
-INCBIN "gfx/pokemon/onix/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/onix/shiny.pal"
-INCBIN "gfx/pokemon/drowzee/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/drowzee/shiny.pal"
-INCBIN "gfx/pokemon/hypno/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hypno/shiny.pal"
-INCBIN "gfx/pokemon/krabby/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/krabby/shiny.pal"
-INCBIN "gfx/pokemon/kingler/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kingler/shiny.pal"
-INCBIN "gfx/pokemon/voltorb/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/voltorb/shiny.pal"
-INCBIN "gfx/pokemon/electrode/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/electrode/shiny.pal"
-INCBIN "gfx/pokemon/exeggcute/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/exeggcute/shiny.pal"
-INCBIN "gfx/pokemon/exeggutor/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/exeggutor/shiny.pal"
-INCBIN "gfx/pokemon/cubone/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/cubone/shiny.pal"
-INCBIN "gfx/pokemon/marowak/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/marowak/shiny.pal"
-INCBIN "gfx/pokemon/hitmonlee/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hitmonlee/shiny.pal"
-INCBIN "gfx/pokemon/hitmonchan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hitmonchan/shiny.pal"
-INCBIN "gfx/pokemon/lickitung/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/lickitung/shiny.pal"
-INCBIN "gfx/pokemon/koffing/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/koffing/shiny.pal"
-INCBIN "gfx/pokemon/weezing/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/weezing/shiny.pal"
-INCBIN "gfx/pokemon/rhyhorn/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/rhyhorn/shiny.pal"
-INCBIN "gfx/pokemon/rhydon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/rhydon/shiny.pal"
-INCBIN "gfx/pokemon/chansey/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/chansey/shiny.pal"
-INCBIN "gfx/pokemon/tangela/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tangela/shiny.pal"
-INCBIN "gfx/pokemon/kangaskhan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kangaskhan/shiny.pal"
-INCBIN "gfx/pokemon/horsea/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/horsea/shiny.pal"
-INCBIN "gfx/pokemon/seadra/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/seadra/shiny.pal"
-INCBIN "gfx/pokemon/goldeen/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/goldeen/shiny.pal"
-INCBIN "gfx/pokemon/seaking/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/seaking/shiny.pal"
-INCBIN "gfx/pokemon/staryu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/staryu/shiny.pal"
-INCBIN "gfx/pokemon/starmie/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/starmie/shiny.pal"
-INCBIN "gfx/pokemon/mr__mime/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mr__mime/shiny.pal"
-INCBIN "gfx/pokemon/scyther/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/scyther/shiny.pal"
-INCBIN "gfx/pokemon/jynx/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/jynx/shiny.pal"
-INCBIN "gfx/pokemon/electabuzz/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/electabuzz/shiny.pal"
-INCBIN "gfx/pokemon/magmar/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/magmar/shiny.pal"
-INCBIN "gfx/pokemon/pinsir/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pinsir/shiny.pal"
-INCBIN "gfx/pokemon/tauros/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tauros/shiny.pal"
-INCBIN "gfx/pokemon/magikarp/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/magikarp/shiny.pal"
-INCBIN "gfx/pokemon/gyarados/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/gyarados/shiny.pal"
-INCBIN "gfx/pokemon/lapras/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/lapras/shiny.pal"
-INCBIN "gfx/pokemon/ditto/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ditto/shiny.pal"
-INCBIN "gfx/pokemon/eevee/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/eevee/shiny.pal"
-INCBIN "gfx/pokemon/vaporeon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/vaporeon/shiny.pal"
-INCBIN "gfx/pokemon/jolteon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/jolteon/shiny.pal"
-INCBIN "gfx/pokemon/flareon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/flareon/shiny.pal"
-INCBIN "gfx/pokemon/porygon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/porygon/shiny.pal"
-INCBIN "gfx/pokemon/omanyte/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/omanyte/shiny.pal"
-INCBIN "gfx/pokemon/omastar/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/omastar/shiny.pal"
-INCBIN "gfx/pokemon/kabuto/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kabuto/shiny.pal"
-INCBIN "gfx/pokemon/kabutops/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kabutops/shiny.pal"
-INCBIN "gfx/pokemon/aerodactyl/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/aerodactyl/shiny.pal"
-INCBIN "gfx/pokemon/snorlax/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/snorlax/shiny.pal"
-INCBIN "gfx/pokemon/articuno/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/articuno/shiny.pal"
-INCBIN "gfx/pokemon/zapdos/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/zapdos/shiny.pal"
-INCBIN "gfx/pokemon/moltres/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/moltres/shiny.pal"
-INCBIN "gfx/pokemon/dratini/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dratini/shiny.pal"
-INCBIN "gfx/pokemon/dragonair/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dragonair/shiny.pal"
-INCBIN "gfx/pokemon/dragonite/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dragonite/shiny.pal"
-INCBIN "gfx/pokemon/mewtwo/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mewtwo/shiny.pal"
-INCBIN "gfx/pokemon/mew/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mew/shiny.pal"
-INCBIN "gfx/pokemon/chikorita/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/chikorita/shiny.pal"
-INCBIN "gfx/pokemon/blossomole/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/blossomole/shiny.pal"
-INCBIN "gfx/pokemon/blossomite/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/blossomite/shiny.pal"
-INCBIN "gfx/pokemon/cubburn/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/cubburn/shiny.pal"
-INCBIN "gfx/pokemon/flambear/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/flambear/shiny.pal"
-INCBIN "gfx/pokemon/bruinus/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bruinus/shiny.pal"
-INCBIN "gfx/pokemon/palssio/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/palssio/shiny.pal"
-INCBIN "gfx/pokemon/pressio/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pressio/shiny.pal"
-INCBIN "gfx/pokemon/donmarin/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/donmarin/shiny.pal"
-INCBIN "gfx/pokemon/burgela/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/burgela/shiny.pal"
-INCBIN "gfx/pokemon/jungela/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/jungela/shiny.pal"
-INCBIN "gfx/pokemon/hoothoot/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoothoot/shiny.pal"
-INCBIN "gfx/pokemon/noctowl/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/noctowl/shiny.pal"
-INCBIN "gfx/pokemon/ledyba/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ledyba/shiny.pal"
-INCBIN "gfx/pokemon/ledian/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ledian/shiny.pal"
-INCBIN "gfx/pokemon/spinarak/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/spinarak/shiny.pal"
-INCBIN "gfx/pokemon/ariados/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ariados/shiny.pal"
-INCBIN "gfx/pokemon/crobat/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/crobat/shiny.pal"
-INCBIN "gfx/pokemon/tyker/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tyker/shiny.pal"
-INCBIN "gfx/pokemon/straigar/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/straigar/shiny.pal"
-INCBIN "gfx/pokemon/pichu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pichu/shiny.pal"
-INCBIN "gfx/pokemon/cleffa/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/cleffa/shiny.pal"
-INCBIN "gfx/pokemon/igglybuff/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/igglybuff/shiny.pal"
-INCBIN "gfx/pokemon/togepi/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/togepi/shiny.pal"
-INCBIN "gfx/pokemon/kolta/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kolta/shiny.pal"
-INCBIN "gfx/pokemon/natu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/natu/shiny.pal"
-INCBIN "gfx/pokemon/xatu/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/xatu/shiny.pal"
-INCBIN "gfx/pokemon/mareep/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mareep/shiny.pal"
-INCBIN "gfx/pokemon/flaaffy/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/flaaffy/shiny.pal"
-INCBIN "gfx/pokemon/ampharos/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ampharos/shiny.pal"
-INCBIN "gfx/pokemon/bellossom/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bellossom/shiny.pal"
-INCBIN "gfx/pokemon/marill/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/marill/shiny.pal"
-INCBIN "gfx/pokemon/grenmar/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/grenmar/shiny.pal"
-INCBIN "gfx/pokemon/bellignan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bellignan/shiny.pal"
-INCBIN "gfx/pokemon/politoed/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/politoed/shiny.pal"
-INCBIN "gfx/pokemon/hoppip/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hoppip/shiny.pal"
-INCBIN "gfx/pokemon/skiploom/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/skiploom/shiny.pal"
-INCBIN "gfx/pokemon/jumpluff/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/jumpluff/shiny.pal"
-INCBIN "gfx/pokemon/aipom/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/aipom/shiny.pal"
-INCBIN "gfx/pokemon/orfry/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/orfry/shiny.pal"
-INCBIN "gfx/pokemon/sunflora/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/sunflora/shiny.pal"
-INCBIN "gfx/pokemon/molambino/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/molambino/shiny.pal"
-INCBIN "gfx/pokemon/angore/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/angore/shiny.pal"
-INCBIN "gfx/pokemon/lurreel/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/lurreel/shiny.pal"
-INCBIN "gfx/pokemon/espeon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/espeon/shiny.pal"
-INCBIN "gfx/pokemon/umbreon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/umbreon/shiny.pal"
-INCBIN "gfx/pokemon/murkrow/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/murkrow/shiny.pal"
-INCBIN "gfx/pokemon/slowking/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/slowking/shiny.pal"
-INCBIN "gfx/pokemon/vulpiii/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/vulpiii/shiny.pal"
-INCLUDE "gfx/pokemon/unown/normal.pal" ; not back.gbcpal
-INCLUDE "gfx/pokemon/unown/shiny.pal"
-INCBIN "gfx/pokemon/bipulla/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/bipulla/shiny.pal"
-INCBIN "gfx/pokemon/girafarig/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/girafarig/shiny.pal"
-INCBIN "gfx/pokemon/disturban/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/disturban/shiny.pal"
-INCBIN "gfx/pokemon/smujj/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/smujj/shiny.pal"
-INCBIN "gfx/pokemon/paraspor/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/paraspor/shiny.pal"
-INCBIN "gfx/pokemon/mimmeo/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mimmeo/shiny.pal"
-INCBIN "gfx/pokemon/steelix/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/steelix/shiny.pal"
-INCBIN "gfx/pokemon/snubbull/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/snubbull/shiny.pal"
-INCBIN "gfx/pokemon/quagsire/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/quagsire/shiny.pal"
-INCBIN "gfx/pokemon/tricules/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tricules/shiny.pal"
-INCBIN "gfx/pokemon/scizor/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/scizor/shiny.pal"
-INCBIN "gfx/pokemon/moibelle/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/moibelle/shiny.pal"
-INCBIN "gfx/pokemon/belledam/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/belledam/shiny.pal"
-INCBIN "gfx/pokemon/sneasel/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/sneasel/shiny.pal"
-INCBIN "gfx/pokemon/qwilfish/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/qwilfish/shiny.pal"
-INCBIN "gfx/pokemon/kazappelin/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kazappelin/shiny.pal"
-INCBIN "gfx/pokemon/coinpur/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/coinpur/shiny.pal"
-INCBIN "gfx/pokemon/luxwan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/luxwan/shiny.pal"
-INCBIN "gfx/pokemon/stromen/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/stromen/shiny.pal"
-INCBIN "gfx/pokemon/phandarin/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/phandarin/shiny.pal"
-INCBIN "gfx/pokemon/pupperon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pupperon/shiny.pal"
-INCBIN "gfx/pokemon/remoraid/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/remoraid/shiny.pal"
-INCBIN "gfx/pokemon/octillery/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/octillery/shiny.pal"
-INCBIN "gfx/pokemon/delibird/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/delibird/shiny.pal"
-INCBIN "gfx/pokemon/mantine/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/mantine/shiny.pal"
-INCBIN "gfx/pokemon/skarmory/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/skarmory/shiny.pal"
-INCBIN "gfx/pokemon/houndour/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/houndour/shiny.pal"
-INCBIN "gfx/pokemon/houndoom/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/houndoom/shiny.pal"
-INCBIN "gfx/pokemon/kingdra/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/kingdra/shiny.pal"
-INCBIN "gfx/pokemon/phanpy/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/phanpy/shiny.pal"
-INCBIN "gfx/pokemon/donphan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/donphan/shiny.pal"
-INCBIN "gfx/pokemon/porygon2/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/porygon2/shiny.pal"
-INCBIN "gfx/pokemon/ballerine/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ballerine/shiny.pal"
-INCBIN "gfx/pokemon/smeargle/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/smeargle/shiny.pal"
-INCBIN "gfx/pokemon/tyrogue/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/tyrogue/shiny.pal"
-INCBIN "gfx/pokemon/hitmontop/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/hitmontop/shiny.pal"
-INCBIN "gfx/pokemon/smoochum/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/smoochum/shiny.pal"
-INCBIN "gfx/pokemon/elekid/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/elekid/shiny.pal"
-INCBIN "gfx/pokemon/magby/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/magby/shiny.pal"
-INCBIN "gfx/pokemon/dodaerie/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/dodaerie/shiny.pal"
-INCBIN "gfx/pokemon/miltank/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/miltank/shiny.pal"
-INCBIN "gfx/pokemon/raikou/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/raikou/shiny.pal"
-INCBIN "gfx/pokemon/entei/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/entei/shiny.pal"
-INCBIN "gfx/pokemon/suicune/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/suicune/shiny.pal"
-INCBIN "gfx/pokemon/warfurs/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/warfurs/shiny.pal"
-INCBIN "gfx/pokemon/wearlycan/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/wearlycan/shiny.pal"
-INCBIN "gfx/pokemon/lickilord/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/lickilord/shiny.pal"
-INCBIN "gfx/pokemon/blissey/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/blissey/shiny.pal"
-INCBIN "gfx/pokemon/ho_oh/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ho_oh/shiny.pal"
-INCBIN "gfx/pokemon/leafeon/back.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/leafeon/shiny.pal"
+; BULBASAUR
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; IVYSAUR
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; VENUSAUR
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; CHARMANDER
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; CHARMELEON
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; CHARIZARD
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SQUIRTLE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; WARTORTLE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; BLASTOISE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; CATERPIE
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; METAPOD
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; BUTTERFREE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; WEEDLE
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; KAKUNA
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; BEEDRILL
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; PIDGEY
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; PIDGEOTTO
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; PIDGEOT
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; RATTATA
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; RATICATE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; SPEAROW
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; FEAROW
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; EKANS
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; ARBOK
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; PIKACHU
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; RAICHU
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; SANDSHREW
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; SANDSLASH
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; NIDORAN_F
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; NIDORINA
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; NIDOQUEEN
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; NIDORAN_M
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; NIDORINO
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; NIDOKING
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; CLEFAIRY
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; CLEFABLE
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; VULPIX
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; NINETALES
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; JIGGLYPUFF
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; WIGGLYTUFF
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; ZUBAT
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; GOLBAT
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; ODDISH
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; GLOOM
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; VILEPLUME
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; PARAS
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; PARASECT
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; VENONAT
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; VENOMOTH
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; DIGLETT
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; DUGTRIO
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; MEOWTH
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; PERSIAN
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; PSYDUCK
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; GOLDUCK
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; MANKEY
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; PRIMEAPE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; GROWLITHE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; ARCANINE
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; POLIWAG
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; POLIWHIRL
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; POLIWRATH
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; ABRA
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; KADABRA
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; ALAKAZAM
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; MACHOP
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MACHOKE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MACHAMP
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; BELLSPROUT
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; WEEPINBELL
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; VICTREEBEL
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; TENTACOOL
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; TENTACRUEL
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; GEODUDE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; GRAVELER
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; GOLEM
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; PONYTA
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; RAPIDASH
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SLOWPOKE
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; SLOWBRO
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; MAGNEMITE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MAGNETON
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; FARFETCH_D
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; DODUO
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; DODRIO
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; SEEL
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; DEWGONG
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; GRIMER
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; MUK
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; SHELLDER
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; CLOYSTER
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; GASTLY
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; HAUNTER
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; GENGAR
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; ONIX
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; DROWZEE
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; HYPNO
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; KRABBY
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; KINGLER
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; VOLTORB
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; ELECTRODE
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; EXEGGCUTE
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; EXEGGUTOR
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; CUBONE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MAROWAK
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; HITMONLEE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; HITMONCHAN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; LICKITUNG
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; KOFFING
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; WEEZING
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; RHYHORN
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; RHYDON
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; CHANSEY
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; TANGELA
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; KANGASKHAN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; HORSEA
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; SEADRA
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; GOLDEEN
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SEAKING
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; STARYU
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; STARMIE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MR__MIME
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; SCYTHER
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; JYNX
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
+
+; ELECTABUZZ
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; MAGMAR
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; PINSIR
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; TAUROS
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MAGIKARP
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; GYARADOS
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; LAPRAS
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; DITTO
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; EEVEE
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; VAPOREON
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; JOLTEON
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; FLAREON
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; PORYGON
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; OMANYTE
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; OMASTAR
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; KABUTO
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; KABUTOPS
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; AERODACTYL
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; SNORLAX
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; ARTICUNO
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; ZAPDOS
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; MOLTRES
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; DRATINI
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; DRAGONAIR
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; DRAGONITE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; MEWTWO
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
+
+; MEW
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
+
+; CHIKORITA
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; BLOSSOMOLE
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; BLOSSOMITE
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; CUBBURN
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; FLAMBEAR
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; BRUINUS
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; PALSSIO
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; PRESSIO
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; DONMARIN
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; BURGELA
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; JUNGELA
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; HOOTHOOT
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; NOCTOWL
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; LEDYBA
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; LEDIAN
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SPINARAK
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; ARIADOS
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; CROBAT
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; TYKER
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; STRAIGAR
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; PICHU
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; CLEFFA
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; IGGLYBUFF
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; TOGEPI
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; KOLTA
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; NATU
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; XATU
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; MAREEP
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; FLAAFFY
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; AMPHAROS
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; BELLOSSOM
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; MARILL
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; GRENMAR
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; BELLIGNAN
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; POLITOED
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; HOPPIP
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; SKIPLOOM
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; JUMPLUFF
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; AIPOM
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; ORFRY
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SUNFLORA
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; MOLAMBINO
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; ANGORE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; LURREEL
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; ESPEON
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; UMBREON
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; MURKROW
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; SLOWKING
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; VULPIII
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; UNOWN
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
+
+; BIPULLA
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; GIRAFARIG
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; DISTURBAN
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; SMUJJ
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; PARASPOR
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; MIMMEO
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; STEELIX
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; SNUBBULL
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; QUAGSIRE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; TRICULES
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; SCIZOR
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
+
+; MOIBELLE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; BELLEDAM
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; SNEASEL
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; QWILFISH
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; KAZAPPELIN
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; COINPUR
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; LUXWAN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; STROMEN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; PHANDARIN
+INCLUDE "gfx/palettes/purple.pal"
+INCLUDE "gfx/palettes/shiny_purple.pal"
+
+; PUPPERON
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; REMORAID
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; OCTILLERY
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; DELIBIRD
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; MANTINE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; SKARMORY
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; HOUNDOUR
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; HOUNDOOM
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; KINGDRA
+INCLUDE "gfx/palettes/blue.pal"
+INCLUDE "gfx/palettes/shiny_blue.pal"
+
+; PHANPY
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; DONPHAN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; PORYGON2
+INCLUDE "gfx/palettes/faded.pal"
+INCLUDE "gfx/palettes/shiny_faded.pal"
+
+; BALLERINE
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; SMEARGLE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; TYROGUE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; HITMONTOP
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; SMOOCHUM
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
+
+; ELEKID
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; MAGBY
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; DODAERIE
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; MILTANK
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; RAIKOU
+INCLUDE "gfx/palettes/yellow.pal"
+INCLUDE "gfx/palettes/shiny_yellow.pal"
+
+; ENTEI
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; SUICUNE
+INCLUDE "gfx/palettes/cyan.pal"
+INCLUDE "gfx/palettes/shiny_cyan.pal"
+
+; WARFURS
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; WEARLYCAN
+INCLUDE "gfx/palettes/brown.pal"
+INCLUDE "gfx/palettes/shiny_brown.pal"
+
+; LICKILORD
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; BLISSEY
+INCLUDE "gfx/palettes/pink.pal"
+INCLUDE "gfx/palettes/shiny_pink.pal"
+
+; HO_OH
+INCLUDE "gfx/palettes/orange.pal"
+INCLUDE "gfx/palettes/shiny_orange.pal"
+
+; LEAFEON
+INCLUDE "gfx/palettes/green.pal"
+INCLUDE "gfx/palettes/shiny_green.pal"
 
 ; 252
-	RGB 30, 26, 11
-	RGB 23, 16, 00
-; 252 shiny
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
 
-INCBIN "gfx/pokemon/egg/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/egg/shiny.pal"
+; EGG
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
 
 ; 254
-	RGB 30, 26, 11
-	RGB 23, 16, 00
-; 254 shiny
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"
 
 ; 255
-	RGB 23, 23, 23
-	RGB 17, 17, 17
-; 255 shiny
-	RGB 23, 23, 23
-	RGB 17, 17, 17
+INCLUDE "gfx/palettes/human.pal"
+INCLUDE "gfx/palettes/shiny_human.pal"

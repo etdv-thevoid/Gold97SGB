@@ -1,3 +1,6 @@
+# local rgbds
+rgbds/
+
 # generated
 *.tx
 *.o

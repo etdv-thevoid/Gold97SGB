@@ -176,7 +176,7 @@ MoveDescriptions::
 	dw CurseDescription
 	dw FlailDescription
 	dw Conversion2Description
-	dw AeroblastDescription
+	dw RockHeadDescription
 	dw CottonSporeDescription
 	dw ReversalDescription
 	dw SpiteDescription
@@ -965,9 +965,9 @@ Conversion2Description:
 	db   "The user's type is"
 	next "made resistant.@"
 
-AeroblastDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
+RockHeadDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
 
 CottonSporeDescription:
 	db   "Sharply reduces"
